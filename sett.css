@@ -1,0 +1,92 @@
+/* General container styles */
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+/* Top Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080; /* Dark blue */
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar-left h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right h3 {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.navbar-right ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-right ul li {
+    margin-left: 15px;
+}
+
+.navbar-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.navbar-right ul li a:hover {
+    background-color: #0066cc; /* Lighter blue */
+}
+
+/* Main Content Area */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f7f9fc; /* Light grey background */
+}
+
+.main-content h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #004080; /* Dark blue */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-right ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .navbar-right ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+}
