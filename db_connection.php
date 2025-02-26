@@ -1,9 +1,9 @@
 <?php
 // Database connection settings
 $host = 'localhost';     // Server host (XAMPP defaults to 'localhost')
-$dbname = 'u587783459_postal_rd'; // Replace with your database name
-$username = 'u587783459_menezes_ent'; // Replace with your database username (XAMPP defaults to 'root')
-$password = 'Jossy$1970'; // Replace with your database password (default is an empty string in XAMPP)
+$dbname = 'postal_rd'; // Replace with your database name
+$username = ''; // Replace with your database username (XAMPP defaults to 'root')
+$password = ''; // Replace with your database password (default is an empty string in XAMPP)
 
 // Creating a PDO instance (PHP Data Object) to connect to the database
 try {
